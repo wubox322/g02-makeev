@@ -1,0 +1,4 @@
+name	indics	exp	year
+aspirin	flu	3	2009
+gel	pain	5	2000
+linex	stomach	2	2002
