@@ -44,7 +44,11 @@ int main()
     	printf("search: ");
     	char fio[32];
     	gets(fio);
-        
+        char cat[32];
+        for (int i = 0 ; i < 32; i++)
+        {
+            cat[i] = fio[i];
+        }
 
     	printf("\n");
     	int n = 0;
@@ -53,16 +57,22 @@ int main()
     	for(int i = 0; i < rows; i++)
     	{
     		char *p = strtok(tab[i].fio,  " ");
-            
+            char *t = strtok(tab[i].cat,  " ");
+
     		if(strcmp(p, fio) == 0)
     		{
 	    		printf("num: %s\n", tab[i].num);
 		    	printf("inf: %s\n", tab[i].inf);
 		    	n++;
-                
+               
 		    }
 
-            
+            if(strcmp(t, cat) == 0)
+    		{
+	    		printf("num: %s\n", tab[i].num);
+		    	n++;
+                
+		    }
 
 
 	    }
