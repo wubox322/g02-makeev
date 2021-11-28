@@ -15,7 +15,7 @@ struct record row[n];
 int main()
 {
     FILE *fileb;
-    fileb = fopen("extask16.raw", "wb");
+    fileb = fopen("ex16.raw", "wb");
 
     for(int i = 0; i < n; i++)
     {
