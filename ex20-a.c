@@ -5,7 +5,7 @@
 
 int main()
 {
-    FILE *f = fopen("extask20-in.txt", "r");
+    FILE *f = fopen("ex20-in.txt", "r");
 
     int m = 0;
     char p[max_txt];
